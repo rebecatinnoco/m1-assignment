@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LAB DAY 1 - Homework</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
@@ -18,14 +19,14 @@
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="page2.html">Events</a></li>
-            <li><a href="page2.html">Contact Us</a></li>        
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Contact Us</a></li>        
         </ul>
     </nav>
 
    <!-- half of the page -->
 
-   <nav class="main-menu"> </nav>    
+<main>  
     <h1>Contacting Us</h1>
         <p>If you need more information about the community, please contact us bu using one of the following:</p>
     <h2>Phone:</h2>
@@ -39,29 +40,30 @@
     <form action="/signup" method="post">
        <fieldset>
            <legend>Contact Form</legend>
-           <label>Enter Your Full Name</label><br>
-             <Input type="text" name="Name"><br>
-           <label>Enter Your email</label><br>
-            <input type="email" name="email"><br>
-           <label>Enter Your Phone</label><br>
-             <input type="phone" name="phone"><br>
-           <br>
-           <label>How should we contact you?</label><br>
+           <label>Enter Your Full Name</label>
+             <Input type="text" name="Name">
+           <label>Enter Your email</label>
+            <input type="email" name="email">
+           <label>Enter Your Phone</label>
+             <input type="phone" name="phone">
+           
+           <label>How should we contact you?</label>
             <input type="radio" name="contact" value="email">Email
-            <input type="radio" name="contact" value="phone">Phone<br>
-           <br>         
-           <label>Which information are you inquiring?</label><br>
+            <input type="radio" name="contact" value="phone">Phone
+           
+           <label>Which information are you inquiring?</label>
            <select>
                <option selected>Select One</option>
                <option>Condominiums</option>
                <option>Events</option>
                <option>Public Parks</option>
                <option >Schools</option>
-           </select><br>
-           <br>
+           </select>
+           
            <input type="submit" Value="Submit">
        </fieldset>
    </form>
+</main> 
 
 <!-- end of the page -->
 
