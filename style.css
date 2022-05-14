@@ -37,6 +37,9 @@ font-family: Arial, Helvetica, sans-serif;
 border-style: double;
 padding: 2px 2px;
 }
+#images {
+    margin: 5%;
+}
 h1 {
     text-align: center;
 }
@@ -69,12 +72,22 @@ footer {
 }
 #nondisclaimer {
     padding: 0 300px;
+    text-align: center;
 }
-/* PAGE EVENTS */
-
 
 /* PAGE CONTACT US */
 
+#contact h2 {
+    text-align: left;
+    margin: 10px;
+}
+#contact h3 {
+    text-align: left;
+    margin: 10px;
+}
+#contact p {
+    margin: 10px;
+}
 label {
     display : block;
     margin: 15px 0 0 0;
@@ -92,4 +105,17 @@ input[type="submit"] {
     display: block;
     margin: 20px 0 10px 0;
     width: 100px;
+}
+/* FOOTER */
+footer {
+}
+#disclaimer {
+    padding: 0;
+}
+#nondisclaimer {
+    padding: 0 300px;
+    text-align: center;
+}
+#nondisclaimer h2 {
+    text-align: center;
 }
