@@ -29,18 +29,7 @@
 
     <main>
     <h1>Gallery</h1>
-    <ul id="album">
-        <!--<li id="photo"><img src="images/metrowest1.jpg"></li>
-        <li id="photo"><img src="images/metrowest2.jpg"></li>
-        <li id="photo"><img src="images/metrowest3.jpg"></li>
-        <li id="photo"><img src="images/metrowest4.jpg"></li>
-        <li id="photo"><img src="images/metrowest5.jpg"></li>
-        <li id="photo"><img src="images/metrowest6.jpg"></li>
-        <li id="photo"><img src="images/metrowest7.jpg"></li>
-        <li id="photo"><img src="images/metrowest8.jpg"></li>
-        <li id="photo"><img src="images/metrowest9.jpg"></li>
-        <li id="photo"><img src="images/metrowest10.jpg"></li>-->
-    </ul>
+    <ul id="album"></ul>
     
     </main>
 <!-- end of the page -->
@@ -62,19 +51,38 @@
     var fileNames = []; //empty array to store image filenames
     var imageList = []; //empty array to store html list that contain an image
     var image; //empty array to store the assembled image list codes
-    var openList = "<li id='photo'>"; //declare a variable to contain open list tag
+    var openList = "<li id='photo"; //declare a variable to contain open list tag
     var closeList = "</li>"; //declare a variable to contain close list tag
+
+    //Lab Assigment Module1_week3_Day3
+    //1-part 
+
+    var openCaptionTag = "<div class='caption'>";
+    var closeCaptionTag = "</div>";
+    var captionTexts = ['Metrowest Village','Townhouses','Senior Living','Commercial Area','Golf Course','Bill Frederick','Metrowest Landscaping','Restaurants','School Bus','Car Care','Gas Stations'];
+    var captionList = [];
+
+    //2-part
+
+    var openDescTag = "<div id='description'>";
+    var closeDescTag = "</div>";
+    var descTexts = ['Metrowest Village d','Townhouses d','Senior Living d','Commercial Area d','Golf Course d','Bill Frederick d','Metrowest Landscaping d','Restaurants d','School Bus d','Car Care d','Gas Stations d'];
+    var descList = [];
+
+    //<div class="description"> | Metrowest View | </div>
     
     //Create a lopp to create 6 images starting with index of 0
     for (var i=0; i<10; i++) {
         fileNames.push( "metrowest"+(i+1)); //Create image file name and store in the array
-        photos.push( "<img src='images/"+fileNames[i]+".jpg'"); //Assemble file name into image element and store in an array
-        image = openList + photos[i] + closeList;
+        photos.push(+i+1+"'><img src='images/"+fileNames[i]+".jpg'"); //Assemble file name into image element and store in an array
+        captionList[i] = openCaptionTag + captionTexts[i] + closeCaptionTag; //Adding Caption format
+        descList[i] = openDescTag + descTexts[i] + closeDescTag; //Adding Description format
+        image = openList + photos[i] + closeList + descList[i] + captionList[i];
         imageList.push(image); //Store(push) the assemble list codes into an array
     }
     
     //Display all six images codes stored in the array
-    document.getElementById("album").innerHTML = imageList;
+    document.getElementById("album").innerHTML = imageList.join("");
     
    
 </script>
