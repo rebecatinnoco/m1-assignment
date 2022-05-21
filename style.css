@@ -30,6 +30,11 @@ nav {
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
 }
+main #album #photo img {
+    width: 400px;
+    margin:50px;
+    height: 275px;
+}
 /* CONTENT */
 main {
 background-color: #f7d391;
@@ -119,3 +124,12 @@ footer {
 #nondisclaimer h2 {
     text-align: center;
 }
+
+#gallery div.desc {
+    padding: 15px;
+    text-align: center;
+    text-underline-position: above;
+    background-color: #902917;
+    color: white;
+    font-weight: bold;
+  }

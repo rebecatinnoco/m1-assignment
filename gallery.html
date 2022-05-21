@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="gallery">
+    
+<!-- Container to wrap everything-->
+<div id="container">
+    <img src="images/image-logo.jpeg" alt="Metrowest logo" width="1000" height="400">
+    <!-- Brand of Website-->
+    <header><H1> Your Local Community Board </H1></header>
+    <!--Main Naviagtion -->
+    <nav>
+   
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Contact Us</a></li>      
+            <li class="active"><a href="gallery.html">Gallery</a></li>  
+        </ul>
+    </nav>
+
+    <!-- half of the page -->
+
+    <main>
+    <h1>Gallery</h1>
+    <ul id="album">
+        <!--<li id="photo"><img src="images/metrowest1.jpg"></li>
+        <li id="photo"><img src="images/metrowest2.jpg"></li>
+        <li id="photo"><img src="images/metrowest3.jpg"></li>
+        <li id="photo"><img src="images/metrowest4.jpg"></li>
+        <li id="photo"><img src="images/metrowest5.jpg"></li>
+        <li id="photo"><img src="images/metrowest6.jpg"></li>
+        <li id="photo"><img src="images/metrowest7.jpg"></li>
+        <li id="photo"><img src="images/metrowest8.jpg"></li>
+        <li id="photo"><img src="images/metrowest9.jpg"></li>
+        <li id="photo"><img src="images/metrowest10.jpg"></li>-->
+    </ul>
+    
+    </main>
+<!-- end of the page -->
+
+<footer>
+    <div id="nondisclaimer">
+       
+        <h2>Social Media</h2>
+        <div class="social"></div>
+        <img src="images/social.jpeg" alt="Social Media" width="400" height="150">
+    </div>
+    <div id="disclaimer"><p>This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.</p>
+    </div>
+</footer>
+
+<!--JavaScript for gallery-->
+<script>
+    var photos = []; //empty array to store image element
+    var fileNames = []; //empty array to store image filenames
+    var imageList = []; //empty array to store html list that contain an image
+    var image; //empty array to store the assembled image list codes
+    var openList = "<li id='photo'>"; //declare a variable to contain open list tag
+    var closeList = "</li>"; //declare a variable to contain close list tag
+    
+    //Create a lopp to create 6 images starting with index of 0
+    for (var i=0; i<10; i++) {
+        fileNames.push( "metrowest"+(i+1)); //Create image file name and store in the array
+        photos.push( "<img src='images/"+fileNames[i]+".jpg'"); //Assemble file name into image element and store in an array
+        image = openList + photos[i] + closeList;
+        imageList.push(image); //Store(push) the assemble list codes into an array
+    }
+    
+    //Display all six images codes stored in the array
+    document.getElementById("album").innerHTML = imageList;
+    
+   
+</script>
+</body>
+</html>
