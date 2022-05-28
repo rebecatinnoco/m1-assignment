@@ -6,6 +6,9 @@ Header {
     font-weight: bold;
     text-align: center;
 }
+#container{
+    text-align: center;
+}
 li {
     display: inline;
     padding: 0 20px;
@@ -29,12 +32,16 @@ nav {
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
 }
+/* gallery */
+#album {
+    text-align: center;
+}
 main #album img {
     width: 400px;
-    margin:50px;
+    /*margin:50px;*/
+    padding: 15px;;
     height: 275px;
 }
-
 main #photo1 {
     display: inline-block;
     text-align: center;
@@ -76,27 +83,57 @@ main #photo10 {
     text-align: center;
 }
 
-
 main #description {
     background-color: rgb(255,245,238);
     width: 400px;
-    padding-top: 4px;
-    padding-bottom: 4px;
     position: relative;
-    bottom: 200px;
-    left: 100px;
+    bottom: 160px;
+    left: 80px;
     width: 300px;
     font-size: large;
     font-weight: bold;
-    opacity: 0.0;
-    /*visibility: hidden;*/
+    visibility: hidden;
 }
 
-main #description:hover{
+#album li:hover #description {
     visibility: visible;
     opacity: 0.6;
     cursor: pointer;
 }
+main #info-box {
+    position: absolute;
+    background-color: #000;
+    opacity: 70%;
+    color: white;
+    width: 400px;
+    height: 250px;
+    margin-top: 200px;
+    margin-left: 450px;
+    border-radius: 10%;
+    visibility: hidden;
+}
+main #info-box #close-info {
+    color:#da9617;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 70px;
+}
+main #info-box #title {
+    font-family: 'Times New Roman', Times, serif;
+    padding-top: 30px;
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: x-large;
+    text-align: left;
+}
+main #info-box #info {
+    font-family: 'Times New Roman', Times, serif;
+    margin-right:100px;
+    padding-top: 20px;
+    padding-left: 20px;
+    text-align: left;
+}
+
 /* CONTENT */
 main {
 background-color: #f7d391;
