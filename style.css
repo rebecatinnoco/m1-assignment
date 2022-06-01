@@ -6,8 +6,9 @@ Header {
     font-weight: bold;
     text-align: center;
 }
-#container{
+#container {
     text-align: center;
+    width: auto;
 }
 li {
     display: inline;
@@ -189,10 +190,12 @@ caption {
 }
 #contact p {
     margin: 10px;
+    text-align: left;
 }
 label {
     display : block;
     margin: 15px 0 0 0;
+    text-align: left;
 }
 input {
     width: 300px;

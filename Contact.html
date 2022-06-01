@@ -7,13 +7,14 @@
     <title>Contact</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body id="contact">
+<body id="contact" onload="hideInfo()">
     
 <!-- Container to wrap everything-->
 <div id="container">
     <img src="images/image-logo.jpeg" alt="Metrowest logo" width="1000" height="400">
     <!-- Brand of Website-->
     <header><H1> Your Local Community Board </H1></header>
+</div>
     
     <!--Main Naviagtion -->
     <nav>
@@ -29,7 +30,7 @@
 
 <main>  
     <h2 class="contact">Contacting Us</h2>
-        <p>If you need more information about the community, please contact us bu using one of the following:</p>
+        <p>If you need more information about the community, please contact us by using one of the following:</p>
     <h3>Phone:</h3>
         <p>(800)000-0000</p>
     <H3>Email:</H3>
@@ -53,14 +54,14 @@
             <input type="radio" name="contact" value="phone">Phone
            
            <label>Which information are you inquiring?</label>
-           <select>
+           <select id="select2">
                <option selected>Select One</option>
                <option>Condominiums</option>
                <option>Events</option>
                <option>Public Parks</option>
                <option >Schools</option>
+               <input id="info" name="infoname" placeholder="Describe it"></input>
            </select>
-           
            <input type="submit" Value="Submit">
        </fieldset>
    </form>
@@ -79,5 +80,11 @@
     <div id="disclaimer"><p>This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.</p>
     </div>
 </footer>
+
+<!--JavaScript for contact-->
+<script src="js/contact.js">
+</script>
+<!--document.getElementById("info").style.visibility="hidden";
+</script>-->
 </body>
 </html>

@@ -54,9 +54,6 @@ var photos = []; //empty array to store image element
         document.getElementById("title").innerHTML= captionTexts[x];
         document.getElementById("info").innerHTML= boxText[x];
         document.getElementById("close-info").innerHTML=closeText;
-        //for (var i=0; i<10; i++) {
-        //diplayInfo = captionTexts[i] + boxText[i] 
-        //}
     }
     function hideInfo () {
         document.getElementById("info-box").style.visibility="hidden";
