@@ -4,6 +4,8 @@ var photos = []; //empty array to store image element
     var image; //empty array to store the assembled image list codes
     var openList = "<li id='photo"; //declare a variable to contain open list tag
     var closeList = "</li>"; //declare a variable to contain close list tag
+    
+    //<li id='photo"><img src='images/metrowest1.jpg</li>
 
     //Lab Assigment Module1_week3_Day3
     //1-part 
@@ -58,3 +60,5 @@ var photos = []; //empty array to store image element
     function hideInfo () {
         document.getElementById("info-box").style.visibility="hidden";
     }
+
+

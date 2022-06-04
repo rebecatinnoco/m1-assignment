@@ -5,57 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Events</title>
+    <!-- External Style Method -->
     <link rel="stylesheet" href="style.css">
+    <!-- jQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
-<body>
+<body >
     
 <!-- Container to wrap everything-->
 <div id="container">
+<img src="images/image-logo.jpeg" alt="Metrowest logo" width="1000" height="400">
 
-    <img src="images/image-logo.jpeg" alt="Metrowest logo" width="1000" height="400">
+<!-- Brand of Website-->
+<header><H1> Events </H1></header>
 
-    <!-- Brand of Website-->
-    <header><H1> Events </H1></header>
+<!--Main Naviagtion -->
+<nav>
+    <ul>
+    <li><a href="index.html">Home</a></li>
+    <li class="active"><a href="events.html">Events</a></li>
+    <li><a href="contact.html">Contact Us</a></li> 
+    <li><a href="gallery.html">Gallery</a></li>  
+    </ul>
+</nav>
 
-
-    <!--Main Naviagtion -->
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="events.html">Events</a></li>
-            <li><a href="contact.html">Contact Us</a></li> 
-            <li><a href="gallery.html">Gallery</a></li>  
-          
-        </ul>
-    </nav>
-
-    <!-- half of the page -->
+<!-- half of the page -->
 <main>
     <h1>Upcoming Events</h1>
-   
     <h2>Orlando Health presents MusicWorks</h2>
-<div id="events"></div>
-    <img src="images/event1.jpg" alt="Music Works" width="400" height="600"> 
-
-    <h2>MetroWest Food Truck Connection</h2>
-    <img src="images/food.jpg" alt="Food Truck" width="400" height="600"> 
+<div id="events">
+    <div id="photo">
+    <a class="lightbox-toggle">
+    <img src="images/event1.jpg" alt="Music Works" > 
+    </a>
 </div>
+
+<div class="backdrop"></div>
+<div class="box">
+    <div class="close">x</div>
+</div>
+
 </main>
-
-    
+</div> 
 <!-- end of the page -->
-
 <footer>
-    <div id="nondisclaimer">
-       
-        <h2>Social Media</h2>
-        <div class="social"></div>
-        <img src="images/social.jpeg" alt="Social Media" width="400" height="150">
-    </div>
-    
-    <div id="disclaimer"><p>This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.</p>
-    </div>
+<div id="nondisclaimer">    
+    <h2>Social Media</h2>
+    <div class="social"></div>
+    <img src="images/social.jpeg" alt="Social Media" width="400" height="150">
+</div>
+<div id="disclaimer"><p>This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.</p>
+</div>
 </footer>
 
+<!-- JavaScript -->
+<script src="js/events.js"></script>
 </body>
 </html>
